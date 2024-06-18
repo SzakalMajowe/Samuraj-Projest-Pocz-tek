@@ -3,4 +3,74 @@
 	padding: 0;
 	box-sizing: border-box;
 	list-style: none;
+    text-decoration: none;
+	font-family: sans-serif;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header {
+	height: 30vh;
+	width: 100%;
+}
+.boxes {
+	height: 70%;
+	width: 100%;
+}
+.box {
+	width: 20%;
+	height: 200px;
+	background-color: red;
+	float: left;
+    margin: 10px 20px;
+    transition: .2s;
+}
+.box:nth-child(2) {
+	background-color: blue;
+}
+.box:nth-child(3) {
+	background-color: yellow;
+}
+.box:nth-child(4) {
+	background-color: pink;
+}
+.box:hover{
+    background-color: blue;
+}
+.box:nth-child(2):hover {
+	background-color: red;
+}
+.box:nth-child(3):hover {
+	background-color: green;
+}
+.box:nth-child(4):hover {
+	background-color: black;
+}
+nav{
+	margin: 20px 0;
+    background-color: black;
+	padding: 10px 0 10px 50px;
+}
+nav ul li{
+    float: left;
+	width: 20%;
+	
+}
+nav ul li a{
+    font-size: 25px;
+    color: white;
+	text-align: center;
+	display: block;
+	border: 2px solid white;
+	background-color: grey;
+	margin: 10px 10px;
+	text-transform: uppercase;
+
+}
+nav ul li a:hover{
+	color: yellow;
+	background-color: gray;
+	border-color: yellow;
 }
